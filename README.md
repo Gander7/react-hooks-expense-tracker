@@ -1,4 +1,5 @@
 # Expense Tracker (React Hooks + Context API)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b02e61fd-22c2-472d-a752-7148166b59f6/deploy-status)](https://app.netlify.com/sites/admiring-wing-cfb44b/deploys)
 
 Simple Expense Tracker using hooks and the context api. Based on youtube's Traversy Media's [Expense Tracker](https://www.youtube.com/watch?v=XuFDcZABiDQ)
 
