@@ -7,6 +7,7 @@ import styles from './AddTransaction.module.css'
 const AddTransaction = () => {
     const [text, setText] = useState('')
     const [amount, setAmount] = useState(0)
+    const [focusInput, setFocus] = useState(null)
 
     const { addTransaction, transactions } = useContext(GlobalContext)
 
@@ -20,6 +21,10 @@ const AddTransaction = () => {
        }
 
        addTransaction(t)
+
+       setText('')
+       setAmount('')
+       focusInput.focus()
     }
 
     return (
@@ -27,18 +32,16 @@ const AddTransaction = () => {
             <h3>Add New Transaction</h3>
             <form id="form" onSubmit={onSubmit} >
                 <div className ="form-control">
-                    <label htmlFor="text">Text</label>
-                    <input 
-                        type="text" 
-                        maxLength="40"
+                    <label>Text</label>
+                    <input type="text" maxLength="40"
+                        ref={ref => setFocus(ref)}
                         value={text} 
                         onChange={(e) => setText(e.target.value)} 
-                        placeholder="Enter text..." />
+                        placeholder="Enter text..." 
+                    />
                 </div>
                 <div className="form-control">
-                    <label htmlFor="amount">
-                        Amount
-                    </label>
+                    <label>Amount (positive = income)</label>
                     <CurrencyInput 
                         value={amount} 
                         onChange={(e) => setAmount(e.target.value)} 
