@@ -17,7 +17,7 @@ const AddTransaction = () => {
        const t = {
            id: transactions.length+1, 
            text,
-           amount: +amount.replace('$','')
+           amount: +amount.replace('$','').replace(/[,]/g,'')
        }
 
        addTransaction(t)
