@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-hooks-expense-tracker/static/css/main.3049dbcd.chunk.css",
-    "main.js": "/react-hooks-expense-tracker/static/js/main.e4e663dd.chunk.js",
-    "main.js.map": "/react-hooks-expense-tracker/static/js/main.e4e663dd.chunk.js.map",
+    "main.js": "/react-hooks-expense-tracker/static/js/main.3e495230.chunk.js",
+    "main.js.map": "/react-hooks-expense-tracker/static/js/main.3e495230.chunk.js.map",
     "runtime-main.js": "/react-hooks-expense-tracker/static/js/runtime-main.a4e89176.js",
     "runtime-main.js.map": "/react-hooks-expense-tracker/static/js/runtime-main.a4e89176.js.map",
     "static/js/2.48cf8f4d.chunk.js": "/react-hooks-expense-tracker/static/js/2.48cf8f4d.chunk.js",
     "static/js/2.48cf8f4d.chunk.js.map": "/react-hooks-expense-tracker/static/js/2.48cf8f4d.chunk.js.map",
     "index.html": "/react-hooks-expense-tracker/index.html",
-    "precache-manifest.1626969cf99a4f436fd73acf3190333a.js": "/react-hooks-expense-tracker/precache-manifest.1626969cf99a4f436fd73acf3190333a.js",
+    "precache-manifest.c970297213eb0b9961225c45a6d3fdf4.js": "/react-hooks-expense-tracker/precache-manifest.c970297213eb0b9961225c45a6d3fdf4.js",
     "service-worker.js": "/react-hooks-expense-tracker/service-worker.js",
     "static/css/main.3049dbcd.chunk.css.map": "/react-hooks-expense-tracker/static/css/main.3049dbcd.chunk.css.map",
     "static/js/2.48cf8f4d.chunk.js.LICENSE.txt": "/react-hooks-expense-tracker/static/js/2.48cf8f4d.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.a4e89176.js",
     "static/js/2.48cf8f4d.chunk.js",
     "static/css/main.3049dbcd.chunk.css",
-    "static/js/main.e4e663dd.chunk.js"
+    "static/js/main.3e495230.chunk.js"
   ]
 }
