@@ -9,10 +9,10 @@ const Transaction = ({transaction}) => {
 
     const css = transaction.amount < 0 
         ? styles.minus 
-        : [styles.plus, styles.transaction].join(' ')
+        : styles.plus
 
     return (
-        <li className={css}>
+        <li className={[styles.transaction, css].join(' ')}>
             {transaction.text} <span>{fmtr.format(transaction.amount)}</span>
             <button className={styles.deleteBtn} onClick={() => deleteTransaction(transaction.id)}>x</button>
         </li>
