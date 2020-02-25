@@ -32,10 +32,18 @@ export const GlobalProvider = ({ children }) => {
         })
     }
 
+    function getCurrencyFormatter() {
+        return new Intl.NumberFormat('en-US', {
+            style: 'currency',
+            currency: 'USD',
+        })
+    }
+
     return (
         <GlobalContext.Provider value={{ 
             transactions: state.transactions,
-            deleteTransaction, addTransaction
+            deleteTransaction, addTransaction,
+            getCurrencyFormatter
         }}>
             {children}
         </GlobalContext.Provider>
