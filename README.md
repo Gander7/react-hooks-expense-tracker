@@ -15,6 +15,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 - CSS split into modules
 - Currency Input
-- UX for form (focusing + clearing)
-- wider container
-- list is reverse sorted with form above to improve UX (avoiding user scrolling)
+- Improved UX for form (focusing, clearing, default values)
+- wider container for better reading
+- Impruved UX for list by reverse sorting and moving the form above (avoiding user scrolling)
