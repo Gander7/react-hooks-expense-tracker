@@ -6,14 +6,14 @@ import styles from './AddTransaction.module.css'
 
 const AddTransaction = () => {
     const [text, setText] = useState('')
-    const [amount, setAmount] = useState(0)
+    const [amount, setAmount] = useState('')
     const [focusInput, setFocus] = useState(null)
 
     const { addTransaction, transactions } = useContext(GlobalContext)
 
     const onSubmit = e => {
        e.preventDefault() 
-
+        console.log(amount)
        const t = {
            id: transactions.length+1, 
            text,
@@ -33,7 +33,7 @@ const AddTransaction = () => {
             <form id="form" onSubmit={onSubmit} >
                 <div className ="form-control">
                     <label>Text</label>
-                    <input type="text" maxLength="40"
+                    <input type="text" maxLength="20"
                         ref={ref => setFocus(ref)}
                         value={text} 
                         onChange={(e) => setText(e.target.value)} 
