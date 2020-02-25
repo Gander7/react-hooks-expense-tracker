@@ -1,17 +1,19 @@
 import React, { useState, useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
 
+import styles from './AddTransaction.module.css'
+
 const AddTransaction = () => {
     const [text, setText] = useState('')
     const [amount, setAmount] = useState(0)
 
-    const { addTransaction } = useContext(GlobalContext)
+    const { addTransaction, transactions } = useContext(GlobalContext)
 
     const onSubmit = e => {
        e.preventDefault() 
 
        const t = {
-           id: Math.floor(Math.random() * 1000000000),
+           id: transactions.length+1, 
            text,
            amount: +amount
        }
@@ -33,7 +35,7 @@ const AddTransaction = () => {
                     </label>
                     <input type="number" value={amount} onChange={(e) => setAmount(e.target.value)} placeholder="Enter amount..." />
                 </div>
-                <button className="btn">Add Transaction</button>
+                <button className={styles.btn}>Add Transaction</button>
             </form>
         </>
     )

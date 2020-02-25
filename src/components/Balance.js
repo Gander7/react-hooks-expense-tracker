@@ -1,13 +1,15 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
 
+import styles from './Balance.module.css'
+
 export const Balance = () => {
     const { transactions } = useContext(GlobalContext)
     const balance = transactions.reduce((acc, t) => (acc += t.amount), 0).toFixed(2)
      return (
          <>
-            <h1>Balance</h1>
-            <h4>{balance}</h4>
+            <h1 className={styles.title}>Balance</h1>
+            <h4 className={styles.text}>{balance}</h4>
          </>
      )
 }

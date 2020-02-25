@@ -1,0 +1,9 @@
+.title {
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.text {
+  margin: 0;
+  text-transform: uppercase;
+}

@@ -1,6 +1,8 @@
 import React, { useContext } from 'react'
 import { GlobalContext } from '../context/GlobalState'
 
+import styles from './IncomeExpenses.module.css'
+
 export const IncomeExpenses = () => {
     const { transactions } = useContext(GlobalContext)
     const amounts = transactions.map(t => t.amount)
@@ -16,14 +18,14 @@ export const IncomeExpenses = () => {
         .toFixed(2)
 
     return (
-        <div className="inc-exp-container">
+        <div className={styles.incomeExpense}>
             <div>
                 <h4>Income</h4>
-                <p className="money plus">{income}</p>
+                <p className={`${styles.money} ${styles.plus}`}>{income}</p>
             </div>
             <div>
                 <h4>Expense</h4>
-                <p className="money minus">{expense}</p>
+                <p className={`${styles.money} ${styles.minus}`}>{expense}</p>
             </div>
         </div>
     )
