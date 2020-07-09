@@ -1,3 +1,5 @@
+[![CodeFactor](https://www.codefactor.io/repository/github/gander7/react-hooks-expense-tracker/badge)](https://www.codefactor.io/repository/github/gander7/react-hooks-expense-tracker)
+
 # Expense Tracker (React Hooks + Context API)
 
 Simple Expense Tracker using hooks and the context api. Based on youtube's Traversy Media's [Expense Tracker](https://www.youtube.com/watch?v=XuFDcZABiDQ)
